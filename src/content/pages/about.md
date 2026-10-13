@@ -1,37 +1,44 @@
 ---
 title: "About"
-description: "A bit about me and this blog."
+description: "Rosalin — Senior Full Stack .NET & AI Engineer with 10+ years building software for banking and insurance."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+Hi, I'm Rosalin 👋 — a Senior Full Stack .NET & AI Engineer with 10+ years of software engineering experience, including 5+ years building enterprise .NET applications for banking and insurance.
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+I like owning features end to end: Angular and Vue.js front ends, ASP.NET Core APIs and background services, SQL Server and MongoDB, Kafka event pipelines, and the CI/CD and cloud plumbing that ships them. Lately I've been building LLM multi-agent systems with LangChain, LangGraph and RAG.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+## What I work with
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+- **Languages:** C#, TypeScript, JavaScript, Python, SQL, Java
+- **Backend:** .NET Core, ASP.NET Core Web API & MVC, microservices, CQRS, Entity Framework, Polly
+- **Frontend:** Angular, Vue.js, React
+- **Data & messaging:** SQL Server, MongoDB, Apache Kafka, Avro, Power BI
+- **Cloud & DevOps:** Azure, GCP Vertex AI, Docker, Kubernetes, GitHub Actions, Azure DevOps, Harness
+- **AI / GenAI:** LLM multi-agent systems, LangChain, LangGraph, RAG, embeddings, prompt engineering, GANs
+- **Quality:** TDD, xUnit, NUnit, Moq, Playwright, code reviews, mentoring
 
-## Features
+## Experience
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+**Senior Software Engineer** — Wells Fargo (via Source Code Technologies) · _2024 – present_<br />
+Led the migration of a 25-component microservices application from on-prem to cloud, built Kafka/Avro event services in .NET, and designed an LLM multi-agent system for synthetic test-data generation using LangGraph and Vertex AI RAG.
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+**Software Engineer** — Orion180 Insurance Services · _2020 – 2024_<br />
+Automated tax, refund and financial reporting with .NET Core and Vue.js, built real-time document processing with Azure SignalR and Functions, redesigned the claims data model, and mentored new engineers and interns.
 
-and so much more.
+**Senior Software Engineer** — Alten Calsoft Labs · _2016 – 2018_<br />
+Python and Java automation for network device discovery and registration.
 
-## Show your support
+**Technology Consultant** — Hewlett Packard Enterprise · _2015 – 2016_<br />
+CLI tooling and Ansible automation for NFV systems.
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+**System Engineer** — Tata Consultancy Services · _2013 – 2015_<br />
+Java service layers and YANG models for the OpenDaylight SDN controller.
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+## Education
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+- **M.S. Computer Science, Generative AI focus** — Florida Institute of Technology, 2020. Thesis: skin-tone data augmentation for face biometrics using GANs.
+- **B.Tech. Electronics & Communication** — Gandhi Institute of Engineering and Technology, 2012
 
-Kyay zuu! 🙏🏼
+## About this site
+
+Notes on what I build, break and learn — .NET, full-stack web, and AI agents. Say hi on [LinkedIn](https://www.linkedin.com/in/rosalindash) or by [email](mailto:dash.rosalin3@gmail.com).
