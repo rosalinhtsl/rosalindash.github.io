@@ -58,12 +58,33 @@ const homePath = getRelativeLocaleUrl(locale, "");
       <p
         class="text-muted-foreground mt-6 max-w-xl text-lg leading-relaxed sm:text-xl"
       >
-        Developer who builds things, breaks them, and documents the fix. Writing
-        about <span class="text-foreground font-mono">code</span>,{" "}
-        <span class="text-foreground font-mono">tools</span> and{" "}
-        <span class="text-foreground font-mono">the web</span> &mdash; one commit
-        at a time.
+        I'm <span class="text-foreground font-semibold">Rosalin Dash</span>, a
+        Senior Full Stack <span class="text-foreground font-mono">.NET</span> &amp;{
+          " "
+        }
+        <span class="text-foreground font-mono">AI</span> Engineer with 10+ years
+        shipping software for banking and insurance. I build event-driven microservices
+        by day and LLM multi-agent systems by curiosity &mdash; and write about what
+        I build, break and learn.
       </p>
+      <ul class="mt-6 flex flex-wrap gap-2" aria-label="Tech stack">
+        {
+          [
+            "C#",
+            ".NET Core",
+            "Angular",
+            "Vue.js",
+            "Kafka",
+            "Azure",
+            "LangGraph",
+            "RAG",
+          ].map(tech => (
+            <li class="bg-muted text-muted-foreground rounded-md px-2.5 py-1 font-mono text-xs">
+              {tech}
+            </li>
+          ))
+        }
+      </ul>
 
       <div class="mt-8 flex flex-wrap items-center gap-3">
         <a

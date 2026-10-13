@@ -4,8 +4,8 @@ export default defineAstroPaperConfig({
   site: {
     url: "https://rosalinhtsl.github.io/",
     title: "rosalindash",
-    description: "Portfolio and blog of rosalindash.",
-    author: "rosalindash",
+    description: "Rosalin Dash — Senior Full Stack .NET & AI Engineer. Notes on C#, .NET, microservices and LLM agents.",
+    author: "Rosalin Dash",
     profile: "https://github.com/rosalinhtsl",
     ogImage: "default-og.jpg",
     lang: "en",
