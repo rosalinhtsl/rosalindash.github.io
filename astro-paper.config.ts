@@ -24,7 +24,7 @@ export default defineAstroPaperConfig({
     showBackButton: true,
     editPost: {
       enabled: true,
-      url: "https://github.com/rosalinhtsl/rosalinhtsl.github.io/edit/main/",
+      url: "https://github.com/rosalinhtsl/rosalindash.github.io/edit/main/",
     },
     search: "pagefind",
   },
