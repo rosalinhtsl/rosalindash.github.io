@@ -10,22 +10,41 @@ type Props = {
 
 const { variant: Heading = "h2", id, data, filePath } = Astro.props;
 
-const { title, description, ...props } = data;
+const { title, description, tags, ...props } = data;
 ---
 
-<li class="my-6">
+<li
+  class:list={[
+    "glass-card group relative my-5 p-5 sm:p-6",
+    "transition duration-300 ease-out",
+    "hover:border-accent/50 hover:-translate-y-1 hover:shadow-[0_12px_40px_-12px_var(--accent)]",
+  ]}
+>
   <a
     href={getPostUrl(id, filePath, Astro.currentLocale)}
     class:list={[
-      "text-accent inline-block text-lg font-medium",
-      "decoration-dashed underline-offset-4 hover:underline",
+      "inline-block text-xl font-semibold sm:text-2xl",
+      "group-hover:text-accent transition-colors",
       "focus-visible:no-underline focus-visible:underline-offset-0",
+      // Stretch the link over the whole card so the card is clickable
+      "after:absolute after:inset-0 after:rounded-2xl after:content-['']",
     ]}
   >
     <Heading transition:name={toTransitionName(id)}>
       {title}
     </Heading>
   </a>
-  <Datetime {...props} />
-  <p>{description}</p>
+  <Datetime {...props} class="mt-1 text-sm" />
+  <p class="text-muted-foreground mt-3 leading-relaxed">{description}</p>
+  {
+    tags.length > 0 && (
+      <ul class="mt-4 flex flex-wrap gap-2" aria-label="Tags">
+        {tags.slice(0, 4).map(tag => (
+          <li class="bg-muted text-accent rounded-full px-3 py-0.5 text-xs font-medium">
+            #{tag}
+          </li>
+        ))}
+      </ul>
+    )
+  }
 </li>

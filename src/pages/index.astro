@@ -33,47 +33,62 @@ const homePath = getRelativeLocaleUrl(locale, "");
     data-home-path={homePath}
     class="app-layout my-1"
   >
-    <section id="hero" class="border-border border-b pt-8 pb-6">
-      <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
-        Mingalaba
-      </h1>
-      <a
-        target="_blank"
-        href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
-        class="inline-block"
-        aria-label="RSS Feed"
-        title="RSS Feed"
+    <section id="hero" class="pt-14 pb-10 sm:pt-20 sm:pb-14">
+      <p
+        class="glass-card text-muted-foreground inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm"
       >
-        <IconRss
-          width={20}
-          height={20}
-          class="stroke-accent scale-125 stroke-3 rtl:-rotate-90"
-        />
-        <span class="sr-only">RSS Feed</span>
-      </a>
+        <span class="relative flex size-2">
+          <span
+            class="bg-accent-2 absolute inline-flex size-full animate-ping rounded-full opacity-75"
+          ></span>
+          <span class="bg-accent-2 relative inline-flex size-2 rounded-full"
+          ></span>
+        </span>
+        Portfolio &amp; blog
+      </p>
+      <h1 class="mt-6 text-5xl leading-[1.05] font-bold sm:text-7xl">
+        Hi, I'm <span class="text-gradient italic">Rosalin</span>.
+      </h1>
+      <p
+        class="text-muted-foreground mt-6 max-w-xl text-lg leading-relaxed sm:text-xl"
+      >
+        I build things, learn in public, and write about it here. Explore my
+        projects, notes and ideas below.
+      </p>
 
-      <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
-      </p>
-      <p class="mt-2">
-        Read the blog posts or check{" "}
-        <LinkButton
-          class="hover:text-accent underline decoration-dashed underline-offset-4"
-          href="https://github.com/satnaing/astro-paper#readme"
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a
+          href={getRelativeLocaleUrl(locale, "posts")}
+          class="from-accent to-accent-2 text-accent-foreground inline-flex items-center gap-2 rounded-full bg-linear-to-r px-6 py-3 font-semibold shadow-lg transition hover:scale-[1.03] hover:shadow-xl"
         >
-          README
-        </LinkButton>{" "}
-        for more info.
-      </p>
+          Read the blog
+          <IconArrowRight class="inline-block size-5 rtl:-rotate-180" />
+        </a>
+        <a
+          href={getRelativeLocaleUrl(locale, "about")}
+          class="glass-card hover:border-accent/60 inline-flex items-center rounded-full px-6 py-3 font-semibold transition"
+        >
+          About me
+        </a>
+        <a
+          target="_blank"
+          href={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}rss.xml`}
+          class="glass-card hover:border-accent/60 inline-flex size-12 items-center justify-center rounded-full transition"
+          aria-label="RSS Feed"
+          title="RSS Feed"
+        >
+          <IconRss
+            width={20}
+            height={20}
+            class="stroke-accent stroke-2 rtl:-rotate-90"
+          />
+        </a>
+      </div>
+
       {
         socials.length > 0 && (
-          <div class="mt-4 flex max-sm:flex-col sm:items-center">
-            <div class="me-2 mb-1 whitespace-nowrap sm:mb-0">
-              {t.home.socialLinks}:
-            </div>
+          <div class="text-muted-foreground mt-8 flex items-center gap-3 text-sm max-sm:flex-col max-sm:items-start">
+            <span class="whitespace-nowrap">{t.home.socialLinks}:</span>
             <Socials />
           </div>
         )
@@ -82,15 +97,10 @@ const homePath = getRelativeLocaleUrl(locale, "");
 
     {
       featuredPosts.length > 0 && (
-        <section
-          id="featured"
-          class:list={[
-            "pt-12 pb-6",
-            { "border-border border-b": recentPosts.length > 0 },
-          ]}
-        >
-          <h2 class="text-2xl font-semibold tracking-wide">
+        <section id="featured" class:list={["pt-8 pb-6"]}>
+          <h2 class="flex items-center gap-4 text-3xl font-bold">
             {t.home.featured}
+            <span class="from-accent/60 h-px flex-1 bg-linear-to-r to-transparent" />
           </h2>
           <ul>
             {featuredPosts.map(data => (
@@ -103,9 +113,10 @@ const homePath = getRelativeLocaleUrl(locale, "");
 
     {
       recentPosts.length > 0 && (
-        <section id="recent-posts" class="pt-12 pb-6">
-          <h2 class="text-2xl font-semibold tracking-wide">
+        <section id="recent-posts" class="pt-8 pb-6">
+          <h2 class="flex items-center gap-4 text-3xl font-bold">
             {t.home.recentPosts}
+            <span class="from-accent/60 h-px flex-1 bg-linear-to-r to-transparent" />
           </h2>
           <ul>
             {recentPosts.slice(0, postsConfig.perIndex).map(data => (
@@ -116,8 +127,11 @@ const homePath = getRelativeLocaleUrl(locale, "");
       )
     }
 
-    <div class="my-8 text-center">
-      <LinkButton href={getRelativeLocaleUrl(locale, "posts")}>
+    <div class="my-10 text-center">
+      <LinkButton
+        href={getRelativeLocaleUrl(locale, "posts")}
+        class="glass-card hover:border-accent/60 rounded-full px-6 py-3 font-semibold transition"
+      >
         {t.home.allPosts}
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
