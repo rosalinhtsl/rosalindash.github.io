@@ -2,11 +2,11 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://rosalindash.github.io/",
+    url: "https://rosalinhtsl.github.io/",
     title: "rosalindash",
     description: "Portfolio and blog of rosalindash.",
     author: "rosalindash",
-    profile: "https://github.com/rosalindash",
+    profile: "https://github.com/rosalinhtsl",
     ogImage: "default-og.jpg",
     lang: "en",
     timezone: "Asia/Bangkok",
@@ -24,12 +24,12 @@ export default defineAstroPaperConfig({
     showBackButton: true,
     editPost: {
       enabled: true,
-      url: "https://github.com/rosalindash/rosalindash.github.io/edit/main/",
+      url: "https://github.com/rosalinhtsl/rosalinhtsl.github.io/edit/main/",
     },
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/rosalindash" },
+    { name: "github",   url: "https://github.com/rosalinhtsl" },
     { name: "x",        url: "https://x.com/username" },
     { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
     { name: "mail",     url: "mailto:yourmail@gmail.com" },
