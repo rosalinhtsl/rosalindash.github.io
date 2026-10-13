@@ -31,7 +31,48 @@
 }
 
 @utility active-nav {
-  @apply underline decoration-wavy decoration-2 underline-offset-8;
+  @apply text-accent underline decoration-2 underline-offset-8;
+}
+
+/* Gradient text for big headlines */
+@utility text-gradient {
+  background-image: linear-gradient(
+    120deg,
+    var(--accent) 0%,
+    var(--accent-2) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Frosted card surface */
+@utility glass-card {
+  @apply border-border rounded-2xl border shadow-sm backdrop-blur-md;
+  background-color: var(--surface);
+}
+
+@layer base {
+  /* Soft glowing backdrop behind the whole page */
+  body {
+    background-image:
+      radial-gradient(48rem 32rem at 10% -10%, var(--glow-1), transparent 60%),
+      radial-gradient(40rem 28rem at 100% 0%, var(--glow-2), transparent 60%);
+    background-repeat: no-repeat;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+  }
+
+  code,
+  pre,
+  kbd {
+    font-family: var(--font-mono);
+  }
 }
 
 :target {
