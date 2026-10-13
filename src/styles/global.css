@@ -46,6 +46,20 @@
   color: transparent;
 }
 
+/* Blinking terminal cursor */
+@utility cursor-blink {
+  animation: cursor-blink 1.1s steps(1) infinite;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Frosted card surface */
 @utility glass-card {
   @apply border-border rounded-2xl border shadow-sm backdrop-blur-md;
