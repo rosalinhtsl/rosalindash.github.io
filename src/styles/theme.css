@@ -14,33 +14,33 @@
   --font-mono: var(--font-google-sans-code);
 }
 
-/* Light theme values */
+/* Light theme values — "Latte", a warm companion to Espresso */
 :root,
 [data-theme="light"] {
-  --background: #faf7f2;
-  --foreground: #1f1b2e;
-  --accent: #6d28d9;
-  --accent-2: #db2777;
+  --background: #f7f1ea;
+  --foreground: #2b211c;
+  --accent: #a04d0c;
+  --accent-2: #8b4a2b;
   --accent-foreground: #ffffff;
-  --muted: #ece6f5;
-  --muted-foreground: #6b6680;
-  --border: #e7e1ee;
-  --surface: rgb(255 255 255 / 0.7);
-  --glow-1: rgb(167 139 250 / 0.35);
-  --glow-2: rgb(244 114 182 / 0.25);
+  --muted: #ebe0d5;
+  --muted-foreground: #6f5648;
+  --border: #e3d5c7;
+  --surface: rgb(255 252 248 / 0.75);
+  --glow-1: rgb(238 120 30 / 0.18);
+  --glow-2: rgb(139 74 43 / 0.14);
 }
 
-/* Dark theme values */
+/* Dark theme values — AstroPaper's "Espresso" scheme */
 [data-theme="dark"] {
-  --background: #0e0c1a;
-  --foreground: #ece9f6;
-  --accent: #b69cff;
-  --accent-2: #f472b6;
-  --accent-foreground: #0e0c1a;
-  --muted: #241f3a;
-  --muted-foreground: #a39fb8;
-  --border: #2a2542;
-  --surface: rgb(28 24 48 / 0.6);
-  --glow-1: rgb(124 58 237 / 0.28);
-  --glow-2: rgb(219 39 119 / 0.18);
+  --background: #2f2f2f;
+  --foreground: #ebe5e1;
+  --accent: #ee781e;
+  --accent-2: #f2b766;
+  --accent-foreground: #1a1a1a;
+  --muted: #4f4b44;
+  --muted-foreground: #ddbfa7;
+  --border: #6f5648;
+  --surface: rgb(58 54 52 / 0.6);
+  --glow-1: rgb(238 120 30 / 0.16);
+  --glow-2: rgb(111 86 72 / 0.3);
 }
