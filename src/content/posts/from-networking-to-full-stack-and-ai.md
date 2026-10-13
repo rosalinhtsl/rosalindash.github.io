@@ -13,15 +13,19 @@ description: "How I went from SDN controllers and NFV tooling to enterprise .NET
 
 Ten years ago I was writing Java service layers for a software-defined networking controller. Today I build enterprise .NET applications and LLM multi-agent systems. The path between those two points wasn't a straight line — and that's exactly why I wanted to write it down.
 
+If there's one thread running through it all, it's an eagerness to learn whatever the next problem needed — even when that meant starting from zero.
+
 This is the story of how I got here, and what each stage taught me.
 
 ## Table of contents
 
 ## 2013 – 2015: Starting at the network layer
 
-My career began as a System Engineer working on **software-defined networking (SDN)**. I implemented service layers using MD-SAL for the **OpenDaylight (ODL) Controller**, created **YANG models** and **RPC interfaces** for communication between network devices and controllers, and deployed Maven bundles as features in the controller.
+This is where it all began — where I wrote my first lines of production code. My career started as a System Engineer working on **software-defined networking (SDN)**. I implemented service layers using MD-SAL for the **OpenDaylight (ODL) Controller**, created **YANG models** and **RPC interfaces** for communication between network devices and controllers, and deployed Maven bundles as features in the controller.
 
-It was low-level, protocol-heavy work in **Java** — and it gave me a foundation I still lean on: thinking in terms of contracts between systems. A YANG model is, at heart, a schema that two parties agree on. Years later, I'd find the same idea in Avro schemas and API contracts.
+Working in **Java** every day is also how I came to truly understand **object-oriented programming** — not as textbook definitions, but in real code. Encapsulation, inheritance, polymorphism and abstraction stopped being interview answers and became the way I structured services, modeled devices and kept a large codebase maintainable. Those principles followed me everywhere, and they're the same foundation behind the SOLID design, dependency injection and design patterns I use in C# and .NET today.
+
+It was low-level, protocol-heavy work — and it gave me another foundation I still lean on: thinking in terms of contracts between systems. A YANG model is, at heart, a schema that two parties agree on. Years later, I'd find the same idea in Avro schemas and API contracts.
 
 ## 2015 – 2016: Learning how infrastructure really works
 
@@ -51,11 +55,17 @@ After graduating, I joined an insurance startup as a Software Engineer and went 
 
 A startup changes how you think about code. There's no buffer between you and the people who use what you build, so I worked closely with the teams behind finance, claims and underwriting. That's where I learned the **language of the business** — premiums and commissions, tax reporting, refunds and checks, claims and policy risk. And I learned that my real job wasn't just writing code: it was **translating business needs into working software**, then translating the results back into something the business could see and act on.
 
+### Learning what scared me
+
+A startup also rewards anyone willing to pick up whatever the problem needs — and my eagerness to learn kept pushing me toward tools I'd never used. When finance needed visibility into their numbers, I taught myself **Power BI** and started building dashboards.
+
+Then there was SQL. I'll be honest: when I started, I was scared to write a SQL query against production data. So I leaned in. I learned by reading the existing views and stored procedures line by line, writing my own, and asking why some queries were fast and others weren't. Over time, the thing I was nervous about became something I was trusted with — I ended up **optimizing the views and stored procedure queries** behind our reports, and later re-designed the claims data model with indexing, constraints, partitioning and SEQUENCE-based numbering.
+
 That showed up in everything I built:
 
 - **Turning manual processes into software** — automating multi-state tax report generation, refund and check processing (RESTful APIs, a Vue.js interface and an end-of-day batch process), and monthly premium and commission reports, replacing manual workflows for the finance team.
 - **Turning data into visualizations** — building **Power BI** dashboards on SQL Server stored procedures and views for claims statistics and tax, check and refund discrepancies, giving finance first-time visibility to catch errors before reporting. I also cleaned third-party location data with **Python (pandas)** to fix geographic risk misalignment, improving policy risk analysis and underwriting accuracy.
-- **Building for real-time and scale** — adopting **Azure SignalR Service with Azure Functions** for real-time document processing, re-designing the claims data model in SQL Server, and using **Application Insights and KQL** for root cause analysis on performance.
+- **Building for real-time and scale** — adopting **Azure SignalR Service with Azure Functions** for real-time document processing, and using **Application Insights and KQL** for root cause analysis on performance.
 - **Growing the team** — leading the production support team, training new hires as full stack engineers, and mentoring interns.
 
 This is where I learned what owning a feature really means: understanding the business problem first, then building the UI, the API, the database and the dashboard that solves it.
@@ -68,6 +78,8 @@ On the **.NET and cloud** side, I've managed a data center migration of a **25-c
 
 This is where my infrastructure years paid off. A data center migration isn't only a code problem — it's dependency mapping, firewall rules, ingress port mapping, IP allowlisting and cutover planning. Understanding how networks, virtual machines and containers behave meant I could reason past the application code to the host, the network and the deployment, and work with infrastructure teams in their own language.
 
+Enterprise scale also taught me how software actually reaches production. I learned to work across **different release platforms** — **Harness CI/CD** and **GitHub Actions** pipelines, multiple release tracks, and the **change request (CR)** process that governs every production change. Getting a change safely to production means planning it, documenting it, getting it approved and validating it afterward — and doing that **in close partnership with the platform team**, who own the environments the code runs in. Shipping isn't the end of the work; it's a coordinated handoff.
+
 On the **AI** side, I designed and built an **LLM multi-agent system** for enterprise synthetic data generation — agents built with **LangChain**, orchestrated with **LangGraph**, using **GCP Vertex AI Vector Search, embeddings and RAG**, with prompt engineering and guardrails to keep agents on task and reduce hallucinations.
 
 My AI and ML background came in handy here. Because I'd studied deep learning and trained generative models myself, LLMs weren't a black box to me. I understood why models hallucinate, why grounding them with retrieval matters, and why generated data has to be validated against real rules — and that shaped how I designed the agents, the guardrails, and the RAG pipeline that aligns generated test data to the closest rule-engine match.
@@ -76,11 +88,12 @@ Synthetic data again — this time with LLMs instead of GANs. My thesis work and
 
 ## What ten years taught me
 
-1. **Infrastructure knowledge is a developer superpower.** Knowing how virtualization, containers and networks work makes you better at building, debugging and deploying applications.
-2. **Learn the language of the business.** The most valuable code translates a business need into something people can use — and the results into something they can see.
-3. **Measure the impact.** "Reduced manual extraction time by 40%" says more than "wrote some scripts."
-4. **Own the whole feature.** Frontend, backend, data, cloud and now AI — the most valuable work happens across the layers.
-5. **Deep foundations pay off.** Going back for a master's in AI after five years in industry is what let me build with LLMs from understanding, not guesswork.
+1. **Stay curious — especially about what scares you.** Power BI, SQL, release processes, LLMs: every skill I'm known for today started as something I didn't know yet.
+2. **Infrastructure knowledge is a developer superpower.** Knowing how virtualization, containers and networks work makes you better at building, debugging and deploying applications.
+3. **Learn the language of the business.** The most valuable code translates a business need into something people can use — and the results into something they can see.
+4. **Measure the impact.** "Reduced manual extraction time by 40%" says more than "wrote some scripts."
+5. **Own the whole feature.** Frontend, backend, data, cloud and now AI — the most valuable work happens across the layers.
+6. **Deep foundations pay off.** Going back for a master's in AI after five years in industry is what let me build with LLMs from understanding, not guesswork.
 
 ## What's next
 
