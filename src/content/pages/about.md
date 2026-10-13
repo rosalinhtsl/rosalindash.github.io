@@ -1,44 +1,57 @@
 ---
 title: "About"
-description: "Rosalin — Senior Full Stack .NET & AI Engineer with 10+ years building software for banking and insurance."
+description: "Rosalin — Senior Full Stack .NET & AI Engineer with 10+ years of software engineering experience."
 ---
 
-Hi, I'm Rosalin 👋 — a Senior Full Stack .NET & AI Engineer with 10+ years of software engineering experience, including 5+ years building enterprise .NET applications for banking and insurance.
-
-I like owning features end to end: Angular and Vue.js front ends, ASP.NET Core APIs and background services, SQL Server and MongoDB, Kafka event pipelines, and the CI/CD and cloud plumbing that ships them. Lately I've been building LLM multi-agent systems with LangChain, LangGraph and RAG.
+Hi, I'm Rosalin 👋 — a Senior Full Stack .NET Engineer with 10+ years of software engineering experience, including 5+ years building enterprise .NET applications for banking and insurance. Skilled in C#, .NET Core, ASP.NET Core Web API, SQL Server, and Angular/Vue.js, with an M.S. in Computer Science (Generative AI).
 
 ## What I work with
 
 - **Languages:** C#, TypeScript, JavaScript, Python, SQL, Java
-- **Backend:** .NET Core, ASP.NET Core Web API & MVC, microservices, CQRS, Entity Framework, Polly
-- **Frontend:** Angular, Vue.js, React
-- **Data & messaging:** SQL Server, MongoDB, Apache Kafka, Avro, Power BI
-- **Cloud & DevOps:** Azure, GCP Vertex AI, Docker, Kubernetes, GitHub Actions, Azure DevOps, Harness
-- **AI / GenAI:** LLM multi-agent systems, LangChain, LangGraph, RAG, embeddings, prompt engineering, GANs
-- **Quality:** TDD, xUnit, NUnit, Moq, Playwright, code reviews, mentoring
+- **.NET / Backend:** .NET Core, ASP.NET Core MVC & Web API, .NET Background Services, RESTful APIs, microservices, Entity Framework, LINQ, Polly, CQRS, SOLID
+- **Frontend:** Angular, Vue.js, Vuex, React, TypeScript, HTML5, CSS3
+- **AI / GenAI:** LLM multi-agent systems, LangChain, LangGraph, RAG, prompt engineering, guardrails, embeddings, GANs, TensorFlow
+- **Cloud & DevOps:** Azure Functions, Azure SignalR Service, Azure AD, GCP Vertex AI, Docker, Kubernetes (OpenShift), Azure DevOps, GitHub Actions, Harness CI/CD
+- **Data & Messaging:** SQL Server, MongoDB, Apache Kafka, Avro, Confluent Schema Registry, Power BI, Splunk
+- **Testing & Process:** xUnit, NUnit, Moq, TDD, Playwright, Agile/Scrum
 
 ## Experience
 
-**Senior Software Engineer** — Wells Fargo (via Source Code Technologies) · _2024 – present_<br />
-Led the migration of a 25-component microservices application from on-prem to cloud, built Kafka/Avro event services in .NET, and designed an LLM multi-agent system for synthetic test-data generation using LangGraph and Vertex AI RAG.
+### Senior Software Engineer · _Aug 2024 – Present_
 
-**Software Engineer** — Orion180 Insurance Services · _2020 – 2024_<br />
-Automated tax, refund and financial reporting with .NET Core and Vue.js, built real-time document processing with Azure SignalR and Functions, redesigned the claims data model, and mentored new engineers and interns.
+- Managed a data center migration of a 25-component microservices application from on-prem to SaaS cloud platforms, including Kafka producers/consumers, MongoDB, firewall rules, and Apigee API gateway components.
+- Developed an Account Summary module: a .NET Core background service publishing Kafka events with Avro schemas via Confluent Schema Registry, and an ASP.NET Core MVC & Web API service exposing account data.
+- Designed and built an LLM multi-agent system for synthetic data generation with LangChain and LangGraph, a Streamlit front end, and prompt engineering with guardrails.
+- Used Python with GCP Vertex AI Vector Search, embeddings, and RAG to align generated test data to rule engine matches.
+- Built a .NET Core configuration management component with Polly retries, timeouts, and circuit breakers, covered by xUnit/Moq unit tests.
+- Helped set up SAML SSO with Azure AD and JWT-based OAuth 2.0 for secured API access.
 
-**Senior Software Engineer** — Alten Calsoft Labs · _2016 – 2018_<br />
-Python and Java automation for network device discovery and registration.
+### Software Engineer · _Dec 2020 – Mar 2024_
 
-**Technology Consultant** — Hewlett Packard Enterprise · _2015 – 2016_<br />
-CLI tooling and Ansible automation for NFV systems.
+- Automated multi-state tax report generation with C#, .NET Core, and Vue.js.
+- Automated refund and check processing with .NET Core RESTful APIs, a Vue.js interface, and an end-of-day batch process updating SQL Server.
+- Designed Power BI dashboards on SQL Server stored procedures and views for claims statistics and discrepancy tracking.
+- Re-designed the claims physical data model in SQL Server with indexing, constraints, partitioning, and SEQUENCE-based numbering.
+- Adopted Azure SignalR Service with Azure Functions for real-time document processing.
+- Led the production support team, trained new hires as full stack engineers, and mentored interns.
 
-**System Engineer** — Tata Consultancy Services · _2013 – 2015_<br />
-Java service layers and YANG models for the OpenDaylight SDN controller.
+### Senior Software Engineer · _Aug 2016 – Aug 2018_
+
+- Developed Python scripts to automate network timing device data extraction, reducing manual extraction time by 40%.
+- Deployed Java applications for device discovery and auto-registration via REST APIs.
+
+### Technology Consultant I · _Sep 2015 – Aug 2016_
+
+- Designed and implemented a CLI tool for operations on NFV system components.
+- Created Ansible playbooks to configure, deploy, and manage CLI tool virtual machines.
+
+### System Engineer · _Jan 2013 – Sep 2015_
+
+- Implemented service layers using MD-SAL for the OpenDaylight (ODL) Controller.
+- Created YANG models and RPC interfaces for communication between network devices and controllers.
 
 ## Education
 
-- **M.S. Computer Science, Generative AI focus** — Florida Institute of Technology, 2020. Thesis: skin-tone data augmentation for face biometrics using GANs.
-- **B.Tech. Electronics & Communication** — Gandhi Institute of Engineering and Technology, 2012
-
-## About this site
-
-Notes on what I build, break and learn — .NET, full-stack web, and AI agents. Say hi on [LinkedIn](https://www.linkedin.com/in/rosalindash) or by [email](mailto:dash.rosalin3@gmail.com).
+- **M.S. in Computer Science, Generative AI Focus** — Florida Institute of Technology · GPA 3.75/4.0<br />
+  Thesis: _Biometric Face Skin Tone Data Augmentation using a Generative Adversarial Network_
+- **B.Tech. in Electronics and Communication** — Gandhi Institute of Engineering and Technology · GPA 8.55/10
