@@ -90,7 +90,7 @@ Synthetic data again — this time with LLMs instead of GANs. My thesis work and
 
 When I was starting my career and navigating different aspects of my life, I didn't realize I would get the experience — and the platform — to work across the full stack of software development.
 
-Looking back at the path I've traveled over these years, I believe I've finally become a **full stack developer who understands business needs**. I now have the confidence that if I'm given a challenge, I can **build it from scratch**, **communicate with stakeholders**, and **deliver what's expected** — or, as one of my mentors put it, _"get the water flowing."_
+Looking back at the path I've traveled over these years, I believe I've finally become a **full stack developer who understands business needs**. I now have the confidence that if I'm given a challenge, I can **build it from scratch**, **communicate with stakeholders**, and **deliver what's expected** — or, as one of my mentors put it, _"get the water flowing, one step at a time."_
 
 ## What ten years taught me
 
