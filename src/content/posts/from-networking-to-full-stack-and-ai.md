@@ -6,8 +6,11 @@ featured: true
 draft: false
 tags:
   - career
+  - full-stack
   - dotnet
   - ai
+  - cloud
+  - learning
 description: "How I went from SDN controllers and NFV tooling to enterprise .NET, event-driven microservices and LLM multi-agent systems — and what each stage taught me."
 ---
 
