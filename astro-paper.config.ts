@@ -9,7 +9,7 @@ export default defineAstroPaperConfig({
     profile: "https://github.com/rosalinhtsl",
     ogImage: "default-og.jpg",
     lang: "en",
-    timezone: "Asia/Bangkok",
+    timezone: "America/Los_Angeles",
     dir: "ltr",
   },
   posts: {
