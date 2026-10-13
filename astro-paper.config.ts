@@ -30,8 +30,7 @@ export default defineAstroPaperConfig({
   },
   socials: [
     { name: "github",   url: "https://github.com/rosalinhtsl" },
-    { name: "x",        url: "https://x.com/username" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/rosalindash" },
     { name: "mail",     url: "mailto:yourmail@gmail.com" },
   ],
   shareLinks: [
