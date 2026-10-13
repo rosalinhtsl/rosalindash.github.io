@@ -23,11 +23,13 @@ My career began as a System Engineer working on **software-defined networking (S
 
 It was low-level, protocol-heavy work in **Java** — and it gave me a foundation I still lean on: thinking in terms of contracts between systems. A YANG model is, at heart, a schema that two parties agree on. Years later, I'd find the same idea in Avro schemas and API contracts.
 
-## 2015 – 2016: Automating virtualized networks
+## 2015 – 2016: Learning how infrastructure really works
 
 Next, as a Technology Consultant, I moved into **network functions virtualization (NFV)**. I designed and implemented a **command-line interface (CLI) tool** for operating NFV system components, wrote **Ansible playbooks** to configure, deploy and manage the tool's virtual machines, and built **Python** scripts for end-to-end cleanup of NFV hardware components, including SNMP configuration and status checks.
 
-This was my first real taste of automation as a product — building tools that other people depend on to do their jobs.
+This role taught me far more than what was on my task list. Working inside an NFV platform meant learning how **virtualization** really works — virtual machines, the hosts underneath them, and the network functions running on top — along with the **containerization** concepts that were changing how software gets packaged and deployed. I also got a close look at the **network details** most application developers never see: how traffic is routed between components, how devices are monitored and configured over SNMP, and what actually happens when something in the chain fails.
+
+I didn't know it then, but this would become my upper hand once I moved into full stack development.
 
 ## 2016 – 2018: Python, Java and measurable impact
 
@@ -43,35 +45,42 @@ My thesis was _Biometric Face Skin Tone Data Augmentation using a Generative Adv
 
 Working on synthetic data generation back then turned out to be surprisingly relevant to what I'm building now.
 
-## 2020 – 2024: Becoming a full stack .NET engineer
+## 2020 – 2024: Full stack at a startup — learning the language of the business
 
-After graduating, I joined the insurance industry as a Software Engineer and went **full stack**: **C#, .NET Core, Vue.js and SQL Server**.
+After graduating, I joined an insurance startup as a Software Engineer and went **full stack**: **C#, .NET Core, Vue.js and SQL Server**.
 
-Some of the work I'm proudest of from this period:
+A startup changes how you think about code. There's no buffer between you and the people who use what you build, so I worked closely with the teams behind finance, claims and underwriting. That's where I learned the **language of the business** — premiums and commissions, tax reporting, refunds and checks, claims and policy risk. And I learned that my real job wasn't just writing code: it was **translating business needs into working software**, then translating the results back into something the business could see and act on.
 
-- **Automating finance workflows** — multi-state tax report generation, refund and check processing with RESTful APIs and an end-of-day batch process, and monthly financial reports — replacing manual processes for the finance team.
-- **Real-time processing** — adopting **Azure SignalR Service with Azure Functions** so users saw document-processing status instantly.
-- **Data and performance** — re-designing the claims data model in SQL Server with indexing, constraints, partitioning and SEQUENCE-based numbering, building **Power BI** dashboards, and using **Application Insights and KQL** for root cause analysis.
-- **Leading people** — leading the production support team, training new hires as full stack engineers, and mentoring interns.
+That showed up in everything I built:
 
-This is where I learned what "owning a feature" really means: the UI, the API, the database, the deployment, and the support afterward.
+- **Turning manual processes into software** — automating multi-state tax report generation, refund and check processing (RESTful APIs, a Vue.js interface and an end-of-day batch process), and monthly premium and commission reports, replacing manual workflows for the finance team.
+- **Turning data into visualizations** — building **Power BI** dashboards on SQL Server stored procedures and views for claims statistics and tax, check and refund discrepancies, giving finance first-time visibility to catch errors before reporting. I also cleaned third-party location data with **Python (pandas)** to fix geographic risk misalignment, improving policy risk analysis and underwriting accuracy.
+- **Building for real-time and scale** — adopting **Azure SignalR Service with Azure Functions** for real-time document processing, re-designing the claims data model in SQL Server, and using **Application Insights and KQL** for root cause analysis on performance.
+- **Growing the team** — leading the production support team, training new hires as full stack engineers, and mentoring interns.
+
+This is where I learned what owning a feature really means: understanding the business problem first, then building the UI, the API, the database and the dashboard that solves it.
 
 ## 2024 – today: Enterprise microservices meet GenAI
 
-Today I'm a Senior Software Engineer in banking, where both halves of my background finally meet.
+Today I'm a Senior Software Engineer in banking, where every chapter of my background finally comes together.
 
 On the **.NET and cloud** side, I've managed a data center migration of a **25-component microservices application** from on-prem to SaaS cloud platforms, built a **.NET Core background service publishing Kafka events with Avro schemas** via Confluent Schema Registry, built resilient components with **Polly** retries, timeouts and circuit breakers, and helped set up **SAML SSO with Azure AD** and JWT-based OAuth 2.0.
 
+This is where my infrastructure years paid off. A data center migration isn't only a code problem — it's dependency mapping, firewall rules, ingress port mapping, IP allowlisting and cutover planning. Understanding how networks, virtual machines and containers behave meant I could reason past the application code to the host, the network and the deployment, and work with infrastructure teams in their own language.
+
 On the **AI** side, I designed and built an **LLM multi-agent system** for enterprise synthetic data generation — agents built with **LangChain**, orchestrated with **LangGraph**, using **GCP Vertex AI Vector Search, embeddings and RAG**, with prompt engineering and guardrails to keep agents on task and reduce hallucinations.
+
+My AI and ML background came in handy here. Because I'd studied deep learning and trained generative models myself, LLMs weren't a black box to me. I understood why models hallucinate, why grounding them with retrieval matters, and why generated data has to be validated against real rules — and that shaped how I designed the agents, the guardrails, and the RAG pipeline that aligns generated test data to the closest rule-engine match.
 
 Synthetic data again — this time with LLMs instead of GANs. My thesis work and my day job finally converged.
 
 ## What ten years taught me
 
-1. **Fundamentals transfer.** Schemas, contracts and automation showed up in every role, whether the stack was Java, Python or C#.
-2. **Measure the impact.** "Reduced manual extraction time by 40%" says more than "wrote some scripts."
-3. **Own the whole feature.** Frontend, backend, data, cloud and now AI — the most valuable work happens across the layers.
-4. **It's never too late to pivot.** Going back for a master's in AI after five years in industry was the best career decision I've made.
+1. **Infrastructure knowledge is a developer superpower.** Knowing how virtualization, containers and networks work makes you better at building, debugging and deploying applications.
+2. **Learn the language of the business.** The most valuable code translates a business need into something people can use — and the results into something they can see.
+3. **Measure the impact.** "Reduced manual extraction time by 40%" says more than "wrote some scripts."
+4. **Own the whole feature.** Frontend, backend, data, cloud and now AI — the most valuable work happens across the layers.
+5. **Deep foundations pay off.** Going back for a master's in AI after five years in industry is what let me build with LLMs from understanding, not guesswork.
 
 ## What's next
 
