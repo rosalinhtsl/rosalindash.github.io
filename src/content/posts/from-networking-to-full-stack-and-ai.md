@@ -94,12 +94,15 @@ Looking back at the path I've traveled over these years, I believe I've finally 
 
 ## What ten years taught me
 
-1. **Stay curious — especially about what scares you.** Power BI, SQL, release processes, LLMs: every skill I'm known for today started as something I didn't know yet.
+1. **Stay curious and keep learning — especially about what scares you.** Keep an eye on the latest technology and never stop picking up new things. Power BI, SQL, release processes, LLMs: every skill I'm known for today started as something I didn't know yet.
 2. **Infrastructure knowledge is a developer superpower.** Knowing how virtualization, containers and networks work makes you better at building, debugging and deploying applications.
 3. **Learn the language of the business.** The most valuable code translates a business need into something people can use — and the results into something they can see.
 4. **Measure the impact.** "Reduced manual extraction time by 40%" says more than "wrote some scripts."
 5. **Own the whole feature.** Frontend, backend, data, cloud and now AI — the most valuable work happens across the layers.
 6. **Deep foundations pay off.** Going back for a master's in AI after five years in industry is what let me build with LLMs from understanding, not guesswork.
+7. **Stay healthy and fit.** Taking care of your body and mind is what gives you the focus and energy to grow and to seize opportunities when they come.
+8. **Make friends, and don't burn bridges.** The people you work with today are your mentors, references and teammates tomorrow — relationships outlast any project.
+9. **Pause, process, then react.** When something is troubling you, take a break and think it through before responding. That habit is what helped me adapt and thrive in the corporate world.
 
 ## What's next
 
