@@ -15,40 +15,17 @@ Hi, I'm Rosalin 👋 — a Senior Full Stack .NET Engineer with 10+ years of sof
 - **Data & Messaging:** SQL Server, MongoDB, Apache Kafka, Avro, Confluent Schema Registry, Power BI, Splunk
 - **Testing & Process:** xUnit, NUnit, Moq, TDD, Playwright, Agile/Scrum
 
-## Experience
+## Experience highlights
 
-### Senior Software Engineer · _Aug 2024 – Present_
-
-- Managed a data center migration of a 25-component microservices application from on-prem to SaaS cloud platforms, including Kafka producers/consumers, MongoDB, firewall rules, and Apigee API gateway components.
-- Developed an Account Summary module: a .NET Core background service publishing Kafka events with Avro schemas via Confluent Schema Registry, and an ASP.NET Core MVC & Web API service exposing account data.
-- Designed and built an LLM multi-agent system for synthetic data generation with LangChain and LangGraph, a Streamlit front end, and prompt engineering with guardrails.
-- Used Python with GCP Vertex AI Vector Search, embeddings, and RAG to align generated test data to rule engine matches.
-- Built a .NET Core configuration management component with Polly retries, timeouts, and circuit breakers, covered by xUnit/Moq unit tests.
-- Helped set up SAML SSO with Azure AD and JWT-based OAuth 2.0 for secured API access.
-
-### Software Engineer · _Dec 2020 – Mar 2024_
-
-- Automated multi-state tax report generation with C#, .NET Core, and Vue.js.
-- Automated refund and check processing with .NET Core RESTful APIs, a Vue.js interface, and an end-of-day batch process updating SQL Server.
-- Designed Power BI dashboards on SQL Server stored procedures and views for claims statistics and discrepancy tracking.
-- Re-designed the claims physical data model in SQL Server with indexing, constraints, partitioning, and SEQUENCE-based numbering.
-- Adopted Azure SignalR Service with Azure Functions for real-time document processing.
-- Led the production support team, trained new hires as full stack engineers, and mentored interns.
-
-### Senior Software Engineer · _Aug 2016 – Aug 2018_
-
-- Developed Python scripts to automate network timing device data extraction, reducing manual extraction time by 40%.
-- Deployed Java applications for device discovery and auto-registration via REST APIs.
-
-### Technology Consultant I · _Sep 2015 – Aug 2016_
-
-- Designed and implemented a CLI tool for operations on NFV system components.
-- Created Ansible playbooks to configure, deploy, and manage CLI tool virtual machines.
-
-### System Engineer · _Jan 2013 – Sep 2015_
-
-- Implemented service layers using MD-SAL for the OpenDaylight (ODL) Controller.
-- Created YANG models and RPC interfaces for communication between network devices and controllers.
+- **Cloud migration:** Managed an enterprise data center migration of a 25-component microservices application from on-prem to SaaS cloud platforms, including Kafka producers/consumers, MongoDB, firewall rules, and Apigee API gateway components.
+- **Generative AI:** Designed and built an LLM multi-agent system for enterprise synthetic data generation with LangChain and LangGraph, using GCP Vertex AI Vector Search, embeddings, and RAG, with prompt engineering and guardrails to reduce hallucinations.
+- **Event-driven microservices:** Developed a .NET Core background service publishing Kafka events with Avro schemas via Confluent Schema Registry, and an ASP.NET Core MVC & Web API service exposing account data through Apigee proxies.
+- **Resilience & quality:** Built a .NET Core configuration management component with Polly retries, timeouts, and circuit breakers, eliminating manual configuration deployments; practiced TDD with 95% code coverage.
+- **Security:** Helped set up SAML SSO with Azure AD for role-based IAM login and JWT-based OAuth 2.0 tokens for secured API access.
+- **Full-stack automation:** Automated multi-state tax reporting, refund and check processing, and monthly financial reports with C#, .NET Core RESTful APIs, Vue.js, and SQL Server, replacing manual workflows for the finance team.
+- **Real-time & performance:** Adopted Azure SignalR Service with Azure Functions for real-time document processing, and drove performance improvements using Application Insights and KQL root cause analysis.
+- **Data & analytics:** Re-designed the claims data model in SQL Server with indexing, partitioning, and constraints, and built Power BI dashboards that gave finance first-time visibility into discrepancies.
+- **Leadership:** Led the production support team, trained new hires as full stack engineers, and mentored interns; experienced in code reviews and Agile/Scrum delivery.
 
 ## Education
 
