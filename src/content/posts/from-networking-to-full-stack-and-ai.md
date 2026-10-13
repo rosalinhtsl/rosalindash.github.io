@@ -19,7 +19,7 @@ This is the story of how I got here, and what each stage taught me.
 
 ## Table of contents
 
-## 2013 – 2015: Starting at the network layer
+## Starting at the network layer
 
 This is where it all began — where I wrote my first lines of production code. My career started as a System Engineer working on **software-defined networking (SDN)**. I implemented service layers using MD-SAL for the **OpenDaylight (ODL) Controller**, created **YANG models** and **RPC interfaces** for communication between network devices and controllers, and deployed Maven bundles as features in the controller.
 
@@ -27,7 +27,7 @@ Working in **Java** every day is also how I came to truly understand **object-or
 
 It was low-level, protocol-heavy work — and it gave me another foundation I still lean on: thinking in terms of contracts between systems. A YANG model is, at heart, a schema that two parties agree on. Years later, I'd find the same idea in Avro schemas and API contracts.
 
-## 2015 – 2016: Learning how infrastructure really works
+## Learning how infrastructure really works
 
 Next, as a Technology Consultant, I moved into **network functions virtualization (NFV)**. I designed and implemented a **command-line interface (CLI) tool** for operating NFV system components, wrote **Ansible playbooks** to configure, deploy and manage the tool's virtual machines, and built **Python** scripts for end-to-end cleanup of NFV hardware components, including SNMP configuration and status checks.
 
@@ -35,21 +35,21 @@ This role taught me far more than what was on my task list. Working inside an NF
 
 I didn't know it then, but this would become my upper hand once I moved into full stack development.
 
-## 2016 – 2018: Python, Java and measurable impact
+## Python, Java and measurable impact
 
 As a Senior Software Engineer, I developed **Python scripts to automate the extraction of network timing device data**, streamlining auto-registration and **reducing manual extraction time by 40%**. I also deployed **Java applications for device discovery and auto-registration** through REST API calls.
 
 The lesson here: automation is only as valuable as the time it gives back. A 40% reduction is a number people remember.
 
-## 2018 – 2020: Going back to school for AI
+## Going back to school for AI
 
-In 2018 I made the biggest pivot of my career: I started an **M.S. in Computer Science with a focus on Generative AI** at Florida Institute of Technology.
+Then I made the biggest pivot of my career: I started an **M.S. in Computer Science with a focus on Generative AI** at Florida Institute of Technology.
 
 My thesis was _Biometric Face Skin Tone Data Augmentation using a Generative Adversarial Network_. I used **GAN style transfer** (BeautyGAN, TensorFlow, Python) to generate six Fitzpatrick skin-tone classes, and analyzed **ArcFace face recognition** on a 440-image makeup dataset. Coursework covered artificial intelligence, deep learning, biometric authentication and software design methodologies.
 
 Working on synthetic data generation back then turned out to be surprisingly relevant to what I'm building now.
 
-## 2020 – 2024: Full stack at a startup — learning the language of the business
+## Full stack at a startup — learning the language of the business
 
 After graduating, I joined an insurance startup as a Software Engineer and went **full stack**: **C#, .NET Core, Vue.js and SQL Server**.
 
@@ -70,7 +70,7 @@ That showed up in everything I built:
 
 This is where I learned what owning a feature really means: understanding the business problem first, then building the UI, the API, the database and the dashboard that solves it.
 
-## 2024 – today: Enterprise microservices meet GenAI
+## Today: Enterprise microservices meet GenAI
 
 Today I'm a Senior Software Engineer in banking, where every chapter of my background finally comes together.
 
