@@ -1,0 +1,51 @@
+---
+import IconFileText from "@/assets/icons/IconFileText.svg";
+import IconDownload from "@/assets/icons/IconDownload.svg";
+import IconExternalLink from "@/assets/icons/IconExternalLink.svg";
+import { getAssetPath } from "@/utils/withBase";
+
+// To update the resume, replace this file in `public/resume/`.
+const RESUME_FILE = "resume/Rosalin_Dash_Resume.pdf";
+
+const resumeUrl = getAssetPath(RESUME_FILE);
+const downloadName = RESUME_FILE.split("/").pop();
+---
+
+<section
+  id="resume"
+  aria-labelledby="resume-heading"
+  class="not-prose glass-card my-8 flex flex-col gap-5 p-5 sm:flex-row sm:items-center sm:p-6"
+>
+  <div
+    class="bg-muted text-accent flex size-14 shrink-0 items-center justify-center rounded-xl"
+  >
+    <IconFileText class="size-7" aria-hidden="true" />
+  </div>
+
+  <div class="flex-1">
+    <h2 id="resume-heading" class="text-xl font-bold">Resume</h2>
+    <p class="text-muted-foreground mt-1 text-sm">
+      Full Stack .NET &amp; AI Engineer &middot; PDF
+    </p>
+  </div>
+
+  <div class="flex flex-wrap gap-3">
+    <a
+      href={resumeUrl}
+      target="_blank"
+      rel="noopener"
+      class="hover:border-accent/60 border-border inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition"
+    >
+      <IconExternalLink class="size-4" aria-hidden="true" />
+      View
+    </a>
+    <a
+      href={resumeUrl}
+      download={downloadName}
+      class="from-accent to-accent-2 text-accent-foreground inline-flex items-center gap-2 rounded-full bg-linear-to-r px-5 py-2.5 text-sm font-semibold shadow-md transition hover:scale-[1.03]"
+    >
+      <IconDownload class="size-4" aria-hidden="true" />
+      Download
+    </a>
+  </div>
+</section>
